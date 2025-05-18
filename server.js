@@ -14,6 +14,7 @@ const bankRoutes = require('./routes/bankRoutes');
 const adminRoutes = require('./routes/BankadminRoutes');
 const HotelRouts = require('./routes/HotelRouts'); // সঠিক নাম
 const teacherRoutes = require("./routes/teacherRoutes");
+const offerRoutes = require('./routes/offerRoutes');
 // const adminRoutestecher = require("./routes/adminRoutestecher");
 
 
@@ -44,6 +45,7 @@ app.use('/hotel', HotelRouts); // সঠিক নাম
 // app.use('/api/hotel', hotelRoutes); // সঠিক নাম
 app.use("/api/teachers", teacherRoutes);
 // app.use("/api/admin", adminRoutestecher);
+app.use('/api/offers', offerRoutes);
 
 
 // Server Start
