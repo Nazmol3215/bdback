@@ -18,7 +18,6 @@ const offerRoutes = require('./routes/offerRoutes');
 // const adminRoutestecher = require("./routes/adminRoutestecher");
 const orderRoutes = require('./routes/orderRoutes');
 
-
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -47,7 +46,6 @@ app.use("/api/teachers", teacherRoutes);
 // app.use("/api/admin", adminRoutestecher);
 app.use('/api/offers', offerRoutes);
 app.use('/api/orders', orderRoutes);
-
 
 
 
