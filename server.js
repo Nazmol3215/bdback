@@ -16,7 +16,7 @@ const HotelRouts = require('./routes/HotelRouts'); // সঠিক নাম
 const teacherRoutes = require("./routes/teacherRoutes");
 const offerRoutes = require('./routes/offerRoutes');
 // const adminRoutestecher = require("./routes/adminRoutestecher");
-
+const orderRoutes = require('./routes/orderRoutes');
 
 
 const app = express();
@@ -46,6 +46,9 @@ app.use('/hotel', HotelRouts); // সঠিক নাম
 app.use("/api/teachers", teacherRoutes);
 // app.use("/api/admin", adminRoutestecher);
 app.use('/api/offers', offerRoutes);
+app.use('/api/orders', orderRoutes);
+
+
 
 
 // Server Start
